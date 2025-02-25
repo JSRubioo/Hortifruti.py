@@ -4,7 +4,7 @@ print("Iniciando a caixa...\n")
 
 saldo_dia =[]
 
-def escolha():
+def escolha_caixa():
     while True:
         print("Escolha a operação:\n 1-Vendas\n 2-Saldo do Dia\n 3-SAIR\n")
         esc = input("Digite a opção escolhida: \n")
@@ -75,7 +75,7 @@ def vendas():
 def total_vendas():
     print("\n--------------------\n O Total de vendas do dia foi: \n")
     total = sum(saldo_dia)
-    return print(total,"\n----------------\n")
+    return print(total,"\n--------------------\n")
 
 
 def forma_pgto():
@@ -95,47 +95,4 @@ def forma_pgto():
         else:
             print("Opção invalida")
                
-
-
-
-
-escolha()
-
-
-
-
-
-
-
-
-'''print("informe a forma de pagamento: ")'''
-"se credito ou debito imprimir compra aprovada"
-"se dinheiro informar a qantidade e informar o troco"
-
-"informar o saldo total de vendas"
-'''def soma(a,b):
-    x = a + b
-    return x
-
-
-def subtrair():
-    x = a - b
-    print(x)
-
-
-def saldo_dia(*args):
-
-    return sum(args)
-
-
-a = int(input("a: "))
-b = int(input("b: "))
-j = int(input(" escolha a operação: "))
-
-if j == 1:
-    print(soma(a,b))
-elif j == 2:
-    subtrair()
-else:
-    print(saldo_dia())
-'''
+escolha_caixa()
